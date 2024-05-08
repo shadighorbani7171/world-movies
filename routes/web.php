@@ -26,4 +26,4 @@ Route::post('/auth',[AuthController::class, 'auth']);
 Route::get('/password/{hash}',[AuthController::class, 'passwordform'])->name('password');
 Route::post('/password/{hash}',[AuthController::class, 'password'])->name('password.submit');
 
-Route::get('/worldmovie',[MoviewebController::class, 'index'])->name('movie');
+Route::get('/worldmovie',[MoviewebController::class, 'index']);
